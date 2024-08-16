@@ -26,7 +26,7 @@ let produtos = [
 
 // Quando chamar "/" com get envie uma resposta:
 // No caso, substituímos o ".send" por ".json" para converter o arquivo direto
-// Aqui estamos listando todos os produtos:
+// Aqui estamos listando todos os produtos / rota raiz:
 app.get('/', (requisicao, resposta) => {
   try {
   return resposta.json(produtos).status(200);
@@ -35,16 +35,17 @@ app.get('/', (requisicao, resposta) => {
   }
 })
 
-// Use query para buscar o produto pelo nome
+// Use query string/ query parameter para buscar o produto pelo nome
 app.get('/produto', (requisicao, resposta) => {
-  let nomeProduto = requisicao.query.nome; // Obtém o valor da query string 'nome'
+
+  let nomeProduto = requisicao.query.qualquerCoisa; // Obtém o valor da query string 'nome'
   let produtoEncotrado = produtos.find(produto => produto.nome === nomeProduto);  // Procura o produto pelo nome
 
   // Se o produto for encontrado, retorna o produto
   if (produtoEncotrado){
-    resposta.json(produtoEncotrado);
+    return resposta.json(produtoEncotrado);
   } else {
-   resposta.status(404).send("Produto não encontrado. Tente novamente");// Envia uma resposta com status 404
+    return resposta.status(404).json({message: "Produto não encontrado. Tente novamente"});// Envia uma resposta com status 404
   }
 })
 // Observacao: No Express, a forma correta de enviar uma resposta ao cliente é utilizando métodos como res.json(), res.send(), res.status(), entre outros, do objeto res (resposta).
