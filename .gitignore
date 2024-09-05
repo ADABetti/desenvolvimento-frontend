@@ -1,1 +1,7 @@
 node_modules
+senha.txt
+
+/javascript
+*.py
+*.cs
+*.json
