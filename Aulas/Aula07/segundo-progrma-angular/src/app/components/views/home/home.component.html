@@ -1,0 +1,30 @@
+<h1>Percorrendo listas</h1>
+<hr />
+<br />
+
+<h3>Versão mais recente</h3>
+@for (produto of produtos; track $index){
+<p>{{ produto.nome }}</p>
+<p>{{ produto.preco }}</p>
+}
+
+<hr />
+<br />
+
+<h3>Versão mais antiga</h3>
+<span *ngFor="let produto of produtos; let i = index">
+  <p>{{ produto.nome }}</p>
+  <p>{{ produto.preco }}</p>
+</span>
+
+<hr />
+<br />
+
+<h3>Usando condicionais</h3>
+@for (produto of produtos; track $index) { @if (produto.nome === 'Bolo de
+morango') {
+<p>Esgotado!</p>
+} @else {
+<p>{{ produto.nome }}</p>
+<p>{{ produto.preco }}</p>
+} }
