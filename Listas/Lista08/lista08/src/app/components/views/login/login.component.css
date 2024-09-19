@@ -1,0 +1,30 @@
+.container-login {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 47, 43);
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  padding: 8px;
+  background-color: rgb(3, 209, 178);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.container-home {
+  padding: 60px;
+}
+
+h1 {
+  color: blueviolet;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+h2,
+h3 {
+  margin: 15px;
+  color: darkblue;
+}
+
+p,
+ul {
+  margin: 20px;
+}

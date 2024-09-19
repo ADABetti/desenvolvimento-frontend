@@ -1,0 +1,19 @@
+<div class="container-login">
+  <div class="login">
+    <input
+      id="email"
+      type="email"
+      placeholder="E-mail"
+      [(ngModel)]="email"
+      required
+    />
+    <input
+      id="senha"
+      type="password"
+      placeholder="Senha"
+      [(ngModel)]="senha"
+      required
+    />
+    <button (click)="fazerLogin()">Login</button>
+  </div>
+</div>

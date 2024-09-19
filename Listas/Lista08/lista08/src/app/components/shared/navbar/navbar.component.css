@@ -1,0 +1,16 @@
+.menu {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.823);
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(140, 245, 4);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  transition: 1s;
+  color: rgb(234, 0, 234);
+}
