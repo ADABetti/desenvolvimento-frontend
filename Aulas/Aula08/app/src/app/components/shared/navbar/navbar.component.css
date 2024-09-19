@@ -1,0 +1,19 @@
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.824);
+}
+
+.menu a {
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  color: aliceblue;
+}
+
+.menu a:hover {
+  color: rgb(218, 16, 211);
+  transition: 2s;
+}
