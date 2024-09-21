@@ -1,0 +1,14 @@
+.mat-toolbar {
+  position: fixed;
+}
+
+.link {
+  margin: 10px;
+  color: #fff;
+  transition: 0.1s ease-in-out;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: rgb(132, 204, 206);
+}
