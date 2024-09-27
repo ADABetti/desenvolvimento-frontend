@@ -1,0 +1,29 @@
+<div class="container-cadastro">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input
+      type="email"
+      matInput
+      [(ngModel)]="email"
+      placeholder="Ex. abc@example.com"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>CPF</mat-label>
+    <input type="text" matInput [(ngModel)]="cpf" required />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Senha</mat-label>
+    <input type="password" matInput [(ngModel)]="senha" required />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Confirmação de senha</mat-label>
+    <input type="password" matInput [(ngModel)]="confirmacaoSenha" required />
+  </mat-form-field>
+
+  <button class="btn-login" mat-fab extended>
+    <mat-icon class="mat-18">person</mat-icon>
+    Login
+  </button>
+</div>

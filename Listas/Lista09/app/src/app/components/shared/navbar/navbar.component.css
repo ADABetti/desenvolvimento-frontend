@@ -1,0 +1,17 @@
+mat-toolbar {
+  background-color: black;
+  position: fixed;
+}
+
+.menu-item {
+  cursor: pointer;
+  transition: 5ms;
+  margin: 10px;
+  color: white;
+}
+
+a:hover {
+  color: rgb(22, 231, 213);
+  font-weight: bold;
+  transition: 20ms;
+}
